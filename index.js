@@ -24,7 +24,7 @@ async function run() {
         const bookingCollection = database.collection('bookings');
 
 
-        // Get Packages API
+        // Get Packages - API
         app.get('/packages', async (req, res) => {
             const cursor = packageCollection.find({});
             const packages = await cursor.toArray();
